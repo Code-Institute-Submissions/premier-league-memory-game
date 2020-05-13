@@ -1,39 +1,30 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<p align="center"> 
+<img src="https://github.com/cfaulkner985/barneys-boxercise/blob/master/assets/images/barneys-boxercise-logo.png">
+</p>
 
-Welcome USER_NAME,
+# ReadMe
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Link to view the website - https://cfaulkner985.github.io/premier-league-memory-game/index.html
 
-## Gitpod Reminders
+I am creating a website on a Premier League memory game. The page will have a grid with 20 blank boxes displayed. There will be an image behind each box and the user will click on a box which will reveal a Premier League club logo. The aim of the game is to match the same logo in just 2 clicks and the images will be removed. The game will finish when all logos have been matched. The user will be given a message, rating and time and the option to play again. The user can then see how well they did so they can try and beat this score in the future.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The business goal of the website is to get as many people playing the game as possible and to make it fun so that more people keep coming back to play. I want to make the game as easy to understand and have a good quality looking site. If the game is a success then I would look into expanding the game or creating more games.
+The user goal of this website is to test their memory of which is great for keeping the brain active. It is also fun for people of all ages to test themselves against friends and family. I have used football badges as this is something I am personally interested in but the user doesn’t have to be a football fan to enjoy the game.
 
-`python3 -m http.server`
+# UX
 
-A blue button should appear to click: *Make Public*,
+## Ideal Client
 
-Another blue button should appear to click: *Open Browser*.
+Ideal user of this site would be:
+* People who enjoy playing memory games.
+*	English Football fans who know the club badges
+*	People who read English to understand the rules
+*	People who have a bit of time to spare to play a fun game
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Client Stories
+*	As a visitor to the website I want to see that the grid has loaded properly which will display 20 English football club badges. There will be 10 different badges 2 from each team.
+*	As a visitor to the website when 2 badges are selected I should be updated if they are a match or not. If they are a match they will turn green and stay on the page. If they are not a match they will turn red and disappear.
+*	As a visitor to the website I want to play the full game to see if the rating and time features are working as they should be. 
+*	As a visitor to the website I want to finish a game and then see if I play again using the button provided 
+*	As a returning visitor to the website I want to see if the game is still running correctly as if any new features have been added.
 
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
