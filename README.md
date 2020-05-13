@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/barneys-boxercise/blob/master/assets/images/barneys-boxercise-logo.png">
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/518e929801ea94920077e0bc2c50806e2e0fac5d/assets/img/memory-game-logo.jpg">
 </p>
 
 # ReadMe
