@@ -1,0 +1,156 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/********** HEADER **********/
+.main-logo {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+/********** TIMER **********/
+h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/********** BUTTONS **********/
+button {
+  background-color: rgb(241, 241, 241);
+  color: black;
+  border: 2px solid #00008b;
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 30%;
+  padding: 0.5em 0.5em;
+  margin-bottom: 1%;
+}
+
+button:hover {
+  background-color: #00008b;
+  color: white;
+}
+
+/********** GAME SECTION **********/
+body {
+  background-color: #247909;
+  font-family: "Roboto", sans-serif;
+}
+
+.memory-game {
+  width: 35em;
+  height: 35em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+
+.badge-card {
+  width: calc(25% - 0.5em);
+  height: calc(33.333% - 0.5em);
+  margin: 0.25em;
+  position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.badge-card:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.badge-card.flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.badge-side,
+.card-side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.badge-side {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card-side {
+  background-color: #bbb;
+}
+
+/********** FOOTER **********/
+h5 {
+  padding-top: 13em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/********** MEDIA QUERIES **********/
+@media screen and (min-width: 601px) {
+  h3 {
+    font-size: 1em;
+  }
+
+  .memory-game {
+    width: 20em;
+  }
+
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 1em;
+  }
+
+  .memory-game {
+    width: 22em;
+  }
+
+  button {
+    width: 5em;
+    text-align: center;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .memory-game {
+    width: 33em;
+    padding-left: 1em;
+  }
+}
