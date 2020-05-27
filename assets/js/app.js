@@ -2,8 +2,9 @@ const badges = document.querySelectorAll(".badge-card");
 
 //Declaring the variables
 let hasFlippedCard = false;
-let lockBoard = false;
+let isBoardLocked = true;
 let cardOne, cardTwo;
+let noOfMatches = 0;
 
 //Funtion to stuffle the cards
 (function shuffle() {
@@ -17,7 +18,7 @@ badges.forEach((card) => card.addEventListener("click", flipCard));
 
 //Funtion to flip the cards
 function flipCard() {
-  if (lockBoard) return;
+  if (isBoardLocked) return;
   if (this === cardOne) return;
 
   this.classList.add("flip");
@@ -29,7 +30,7 @@ function flipCard() {
   }
 
   cardTwo = this;
-  lockBoard = true;
+  isBoardLocked = true;
 
   checkForMatch();
 }
@@ -37,7 +38,31 @@ function flipCard() {
 //Funtion to check for matches
 function checkForMatch() {
   let isMatch = cardOne.dataset.framework === cardTwo.dataset.framework;
-  isMatch ? disableCards() : unflipCards();
+
+  if (isMatch) {
+    disableCards();
+    countMatches();
+  } else {
+    unflipCards();
+  }
+}
+
+//Funtion to count matches of cards
+function countMatches() {
+  noOfMatches = noOfMatches + 1;
+  if (foundAllMatches()) {
+    alert("Congratulations you got all " + noOfMatches + " matches");
+    stopGame();
+  }
+}
+
+//Funtion to check if user has found all matches
+function foundAllMatches() {
+  if (noOfMatches == badges.length / 2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //Funtion to disbale the cards
@@ -61,8 +86,10 @@ function unflipCards() {
 
 //Funtion to reset the board
 function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [cardOne, cardTwo] = [null, null];
+  hasFlippedCard = false;
+  isBoardLocked = false;
+  cardOne = null;
+  cardTwo = null;
 }
 
 //Funtion for time
@@ -79,18 +106,14 @@ function resetBoard() {
         timeContainer.innerText = timer;
         count();
       } else {
-        alert("Time's up!");
+        alert("Time's up! You got " + noOfMatches + " matches");
         startButton.style.display = "inline-block";
+        stopGame();
       }
     }, 1000);
   }
 
-  //Start and End game buttons
-  function endGame() {
-    clearTimeout(timeout);
-    startButton.style.display = "inline-block";
-    alert("You completed the game in time!");
-  }
+  //Start game button
   function startGame() {
     if (timeout) {
       clearTimeout(timeout);
@@ -99,7 +122,19 @@ function resetBoard() {
     timeContainer.innerText = timer;
     this.style.display = "none";
     count();
+    isBoardLocked = false;
+    resetBoard();
   }
+
+  //Funtion for stopping the game
+  function stopGame() {
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+    timer = 0;
+    timeContainer.innerText = timer;
+    isBoardLocked = true;
+  }
+
   document.getElementById("start-game").addEventListener("click", startGame);
-  document.getElementById("end-game").addEventListener("click", endGame);
 })();
