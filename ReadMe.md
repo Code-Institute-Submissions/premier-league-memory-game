@@ -8,7 +8,7 @@ Link to view the website - https://cfaulkner985.github.io/premier-league-memory-
 
 I am creating a website on a Premier League memory card game. The page will have a grid with 20 playing cards displayed. There will be an image behind each box and the user will click on a card which will reveal a Premier League club logo. The aim of the game is to match the same logo in just 2 clicks and the images will be removed. The game will finish when all logos have been matched. The game will have a timer on it which will display how long it takes the user to complete it. There will also be 2 buttons; the first one will be a ‘Start Game’ button where the user will press to start the timer of the game. The second will be an ‘End Game’ button which will be used to stop the timer when the user is finished playing the game.
 
-The user will have 60 seconds to complete the game and if they do they will get a well done message. If the user does not complete the game in 60 seconds then they will get a message that there time is up.
+The user will have 60 seconds to complete the game and if they do they will get a congratualtions message with how many matches they got. If the user does not complete the game in 60 seconds then they will get a message that there time is up and how many matches they got.
 
 The business goal of the website is to get as many people playing the game as possible and to make it fun so that more people keep coming back to play. I want to make the game as easy to understand and have a good quality looking site. If the game is a success then I would look into expanding the game or creating more games.
 
@@ -27,12 +27,12 @@ Ideal user of this site would be:
 *	People who have a bit of time to spare to play a fun game
 
 ## Client Stories
-*	As a visitor to the website I want to see that the grid has loaded properly which will display 20 English football club badges. There will be 10 different badges 2 from each team.
+*	As a visitor to the website I want to see the logo of the game and a description on how to play it etc.
+*	As a visitor to the website I want to see that the grid has loaded properly which will display 16 playing cards. There will be 8 different badges 2 from each team behind each playing card.
 *	As a visitor to the website when 2 badges are selected I should be updated if they are a match or not. If they are a match they will turn keep turned over to the badge and stay on the page. If they are not a match they will turn back to the card.
 *	As a visitor to the website I want to click on the ‘Start Game’ button and see if the timer starts counting. 
-*	As a visitor to the website I want to click on the ‘Start Game’ and complete the game before the time runs out to see if the correct message appears
-*	As a visitor to the website I want to click on the ‘Start Game’ and not complete the game before the time runs out to see if the correct message appears
-*	As a visitor to the website I want to click on the ‘End Game’ button and see if the timer stops.
+*	As a visitor to the website I want to click on the ‘Start Game’ and complete the game before the time runs out to see how many matches I got and what message appears
+*	As a visitor to the website I want to click on the ‘Start Game’ and not complete the game before the time runs out to see how many matches I got and what message appears
 *	As a returning visitor to the website I want to see if the game is still running correctly as if any new features have been added.
 
 ## Existing Features
@@ -40,10 +40,11 @@ Ideal user of this site would be:
 *	Body text on the page will give instructions on how to play the game.
 *	Timer appears on the page to tell the user how long it takes to complete the game. The timer starts when the user clicks on the ‘Start Game’ button and end when the user clicks on the ‘End Game’ button’
 *	Start Game button on the page starts the timer which will start the game.
-*	End Game button on the page will stop the timer and end the game.
 *	There will be 16 playing cards appearing on the page which will be a grid of 4 horizontal and 4 vertical. They will appear as the back of a playing card and when they are click they will turn around to reveal a club badge.
 
 ## Features to implement in the future
+* I will make sure the last card turns over correctly when the user completes the game.
+I will make sure the grid refreshes when they click on the 'OK' on the alert message instead of having to refresh the brower page.
 *	I will set up a rating system so the user will be given a rating on how well they did determined on how many click it took them in what space of time.
 *	I will add a leader board so each time a player finishes the game they will be able to input there details onto a leader board. They can see how they compare to theirs friends etc.
 *	I will create more badge game so the user can pick what sport etc. that they know and prefer to play. The next one to do will be a basketball game as I know there would be high demand for that.
