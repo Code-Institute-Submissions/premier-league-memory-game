@@ -66,7 +66,7 @@ I have used the W3C validators to make sure my HTML and CSS codes have no errors
 *	I checked the website on different devices and from different locations and looks good.
 *	I asked friend and family to check the website and let me know if there was anything they would to improve. They suggested that fix the refresh issue and maybe a rating at the end.
 *	I have tested all pages on the following devices:
-    * Desktop (Chrome, Firefox, Internet Explorer)
+    * Desktop - Chrome (Version 83.0.4103.61), Firefox Version 76.0.1), Internet Explorer (Version 11)
     * Galaxy S5
     * Pixel 2
     * IPhone X
