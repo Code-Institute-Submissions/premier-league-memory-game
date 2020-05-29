@@ -53,6 +53,7 @@ I will make sure the grid refreshes when they click on the 'OK' on the alert mes
 
 ## Technologies Used
 *	I have used HTML, CSS and JavaScript programming languages.
+*   I used (http://vanilla-js.com/) for the JavaScript in the website
 *	I used Gitpod (https://gitpod.io/) to build the website.
 *	I also used Goggle Fonts (https://fonts.google.com/) to create the font for the site.
 *	The project also uses AutoPrefixer (https://autoprefixer.github.io/) and makes sure the CSS is valid for all web browsers
