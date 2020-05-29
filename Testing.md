@@ -29,7 +29,7 @@ I have used the W3C validators to make sure my HTML and CSS codes have no errors
 *	When I clicked on the ‘Start Game’ button the timer starts counting as expected.
 *	When I match all badges before the 60 seconds I get the message “"Congratulations you got all 8 matches" as this is what I expected to happen which is shown in the image below.
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/completed-game.png>
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/completed-game.png">
 </p>
 
 *	If I match 1-7 pairs when the time runs out I get the message “"Time's up! You got (No. of matches 1-7) matches. An example is shown in the image below.
