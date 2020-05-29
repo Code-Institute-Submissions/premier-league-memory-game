@@ -17,24 +17,24 @@ I have used the W3C validators to make sure my HTML and CSS codes have no errors
 *	If I don’t get a match they turn back over to the card view as expected.
 *	I changed the colour of the cards to see if they actually do randomize on loading the page. The below image shows that they do randomize as expected. I only changed colour for this test and changed them all back to red. 
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/assets/testing/random-grid.png">
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/random-grid.png">
 </p>
 
 *	Clicking on a card before the game starts does not flip over a card which is the way I expected this to work.
 *	I clicked on every card and they are all turning over as expected in a randomize order which is shown in the image below.
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/assets/testing/finished-grid.png">
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/finished-grid.png">
 </p>
 
 *	When I clicked on the ‘Start Game’ button the timer starts counting as expected.
 *	When I match all badges before the 60 seconds I get the message “"Congratulations you got all 8 matches" as this is what I expected to happen which is shown in the image below.
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/assets/testing/completed-game.png">
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/completed-game.png>
 </p>
 
 *	If I match 1-7 pairs when the time runs out I get the message “"Time's up! You got (No. of matches 1-7) matches. An example is shown in the image below.
 <p align="center"> 
-<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/assets/testing/times-up.png">
+<img src="https://github.com/cfaulkner985/premier-league-memory-game/blob/master/testing/times-up.png">
 </p>
 
 *	When finishing the game with all matches the last card does not turn over as expected and this would be something I would have to look at in the future.
