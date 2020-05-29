@@ -6,8 +6,8 @@ let isBoardLocked = true;
 let cardOne, cardTwo;
 let noOfMatches = 0;
 
-//Funtion to stuffle the cards
-(function shuffle() {
+//Funtion to randomize the cards
+(function ranomizeCards() {
   badges.forEach((card) => {
     let ramdomPos = Math.floor(Math.random() * 16);
     card.style.order = ramdomPos;
