@@ -56,23 +56,23 @@
 *	The grid of all 16 cards loads correctly and scales correctly when I view it on different devices.
 *	If I get a match they stay turned over to the badge as expected.
 *	If I don’t get a match they turn back over to the card view as expected.
-*	I changed the colour of the cards to see if they actually do randomize on loading the page. The below image shows that they do randomize as expected. I only changed colour for this test and changed them all back to red. 
+*	I changed the colour of the cards to see if they actually do randomize on loading the page and they do randomize as expected. I only changed colour for this test and changed them all back to red. 
 *	Clicking on a card before the game starts does not flip over a card which is the way I expected this to work.
-*	I clicked on every card and they are all turning over as expected in a randomize order which is shown in the image below.
+*	I clicked on every card and they are all turning over as expected in a randomize order
 *	When I clicked on the ‘Start Game’ button the timer starts counting as expected.
-*	When I match all badges before the 60 seconds I get the message “"Congratulations you got all 8 matches" as this is what I expected to happen which is shown in the image below.
-*	If I match 1-7 pairs when the time runs out I get the message “"Time's up! You got (No. of matches 1-7) matches. An example is shown in the image below.
+*	When I match all badges before the 60 seconds I get the message “"Congratulations you got all 8 matches" as this is what I expected to happen 
+*	If I match 1-7 pairs when the time runs out I get the message “"Time's up! You got (No. of matches 1-7) matches which is what expected.
+* The grid refreshes to its originasl state after completed game or timer runs out.
+* When the grid refreses the user can keep playing the game as many times as they like.
 
-
-## Pending Issues
-*	When finishing the game with all matches the last card does not turn over as expected and this would be something I would have to look at in the future.
-*	Also when I finish the game the grid does not refresh without me having to do it in the browser. This is also another issue I would have to look at in the future.
+ ## Pending Issues
+* I was able to fix all of the pending issues that I had.
 
 ## Validation
 I have used the W3C validators to make sure my HTML and CSS codes have no errors. The links for these can be found below:
 - W3C CSS validation (https://jigsaw.w3.org/css-validator/) 
 - W3C Markup Validation (https://validator.w3.org/)
-- I also used (https://esprima.org/demo/validate.html) to validate there was no errors on the JavaScript file.
+- I also used JSHint (https://jshint.com/) to validate there was no errors on the JavaScript file.
 
 ## Further Testing
 *	I checked the website on different devices and from different locations and looks good.
