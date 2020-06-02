@@ -6,13 +6,13 @@ let isBoardLocked = true;
 let cardOne, cardTwo;
 let noOfMatches = 0;
 
-//Funtion to stuffle the cards
-(function shuffle() {
+//Funtion to randomize the cards
+(function randomizeCards() {
   badges.forEach((card) => {
     let ramdomPos = Math.floor(Math.random() * 16);
     card.style.order = ramdomPos;
   });
-})();
+//})();
 
 badges.forEach((card) => card.addEventListener("click", flipCard));
 
@@ -28,20 +28,21 @@ function flipCard() {
     cardOne = this;
     return;
   }
-
   cardTwo = this;
   isBoardLocked = true;
-
   checkForMatch();
 }
+
+
 
 //Funtion to check for matches
 function checkForMatch() {
   let isMatch = cardOne.dataset.framework === cardTwo.dataset.framework;
 
   if (isMatch) {
-    disableCards();
     countMatches();
+    disableCards();
+
   } else {
     unflipCards();
   }
@@ -51,8 +52,10 @@ function checkForMatch() {
 function countMatches() {
   noOfMatches = noOfMatches + 1;
   if (foundAllMatches()) {
-    alert("Congratulations you got all " + noOfMatches + " matches");
+    setTimeout(function(){
+      alert("Congratulations you got all "     + noOfMatches + " matches");
     stopGame();
+    },1000);
   }
 }
 
@@ -92,49 +95,53 @@ function resetBoard() {
   cardTwo = null;
 }
 
-//Funtion for time
-(function () {
-  let timeContainer = document.getElementById("timer-value");
-  let startButton = document.getElementById("start-game");
+//Funtion to unflip cards at end of game
+function unflipAllcards() {
+  $(".flip").removeClass('flip');
+}
+
+//Timer and start game button
+  let timeContainer = $('#timer-value');
+  let startButton2 = $('#start-game')
   let timer = 0;
   let maxTime = 60;
   let timeout = null;
+
   function count() {
     timeout = setTimeout(function () {
       if (timer < maxTime) {
         timer++;
-        timeContainer.innerText = timer;
+        $(timeContainer).text(timer)
         count();
       } else {
         alert("Time's up! You got " + noOfMatches + " matches");
-        startButton.style.display = "inline-block";
+        startButton2.show()
         stopGame();
       }
-    }, 1000);
+    }, 1300);
   }
 
   //Start game button
   function startGame() {
+    badges.forEach((card) => card.addEventListener("click", flipCard));
     if (timeout) {
       clearTimeout(timeout);
     }
     timer = 0;
-    timeContainer.innerText = timer;
-    this.style.display = "none";
+    $(timeContainer).text(timer)
+    startButton2.hide()
     count();
     isBoardLocked = false;
-    resetBoard();
   }
 
   //Funtion for stopping the game
   function stopGame() {
     if (timeout) {
       clearTimeout(timeout);
+      startButton2.show()
     }
-    timer = 0;
-    timeContainer.innerText = timer;
+    timer = 0; 
+    $(timeContainer).text(timer)
     isBoardLocked = true;
+    unflipAllcards();
   }
-
-  document.getElementById("start-game").addEventListener("click", startGame);
-})();
