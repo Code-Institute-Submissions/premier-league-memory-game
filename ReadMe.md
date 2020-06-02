@@ -31,6 +31,7 @@ Ideal user of this site would be:
 ## Client Stories
 *	As a visitor to the website I want to see the logo of the game and a description on how to play it etc.
 *	As a visitor to the website I want to see that the grid has loaded properly which will display 16 playing cards. There will be 8 different badges 2 from each team behind each playing card.
+* As a visitor to the website I want to make sure that the grid is randomize so the game is the way it is supposed to be
 *	As a visitor to the website when 2 badges are selected I should be updated if they are a match or not. If they are a match they will turn keep turned over to the badge and stay on the page. If they are not a match they will turn back to the card.
 *	As a visitor to the website I want to click on the ‘Start Game’ button and see if the timer starts counting. 
 *	As a visitor to the website I want to click on the ‘Start Game’ and complete the game before the time runs out to see how many matches I got and what message appears
@@ -53,9 +54,10 @@ I will make sure the grid refreshes when they click on the 'OK' on the alert mes
 
 ## Technologies Used
 *	I have used HTML, CSS and JavaScript programming languages.
-*   I used (http://vanilla-js.com/) for the JavaScript in the website
+* I used Vanilla JS (http://vanilla-js.com/) for the JavaScript in the website
+* I also used JQuery (https://jquery.com/) for the JavaScript in the website
 *	I used Gitpod (https://gitpod.io/) to build the website.
-*	I also used Goggle Fonts (https://fonts.google.com/) to create the font for the site.
+*	I used Goggle Fonts (https://fonts.google.com/) to create the font for the site.
 *	The project also uses AutoPrefixer (https://autoprefixer.github.io/) and makes sure the CSS is valid for all web browsers
 *	I decided for this project to use media queries for mobile and tablet devices. I decided to use media queries this time as I used Bootstrap on my last project and wanted to try both methods.
 
