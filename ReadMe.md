@@ -76,7 +76,7 @@ Testing was done on a seperate document which is: [Testing.md](https://github.co
 This project was developed using the GitPod (https://gitpod.io/) and was committed to git and pushed to GitHub using the built in function within GitPod.
 In GitHub the repository is cfaulkner985/premier-league-memory-game (https://github.com/cfaulkner985/premier-league-memory-game). Below is the way to deploy the files to GitHub:
 1. Log into GitHub. 
-2. From the list of repositories on the screen, select ‘cfaulkner985/barneys-boxercise’
+2. From the list of repositories on the screen, select ‘cfaulkner985/premier-league-memory-game’
 3. From the menu items near the top of the page, select ‘Settings’.
 4. Scroll down to the ‘GitHub Pages’ section.
 5. Under ‘Source’ click the drop-down menu labelled ‘None’ and select ‘Master Branch’
