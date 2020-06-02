@@ -12,7 +12,7 @@ let noOfMatches = 0;
     let ramdomPos = Math.floor(Math.random() * 16);
     card.style.order = ramdomPos;
   });
-//})();
+})();
 
 badges.forEach((card) => card.addEventListener("click", flipCard));
 
@@ -32,8 +32,6 @@ function flipCard() {
   isBoardLocked = true;
   checkForMatch();
 }
-
-
 
 //Funtion to check for matches
 function checkForMatch() {
@@ -102,7 +100,7 @@ function unflipAllcards() {
 
 //Timer and start game button
   let timeContainer = $('#timer-value');
-  let startButton2 = $('#start-game')
+  let startButton2 = $('#start-game');
   let timer = 0;
   let maxTime = 60;
   let timeout = null;
@@ -111,14 +109,14 @@ function unflipAllcards() {
     timeout = setTimeout(function () {
       if (timer < maxTime) {
         timer++;
-        $(timeContainer).text(timer)
+        $(timeContainer).text(timer);
         count();
       } else {
         alert("Time's up! You got " + noOfMatches + " matches");
-        startButton2.show()
+        startButton2.show();
         stopGame();
       }
-    }, 1300);
+    }, 1200);
   }
 
   //Start game button
@@ -128,8 +126,8 @@ function unflipAllcards() {
       clearTimeout(timeout);
     }
     timer = 0;
-    $(timeContainer).text(timer)
-    startButton2.hide()
+    $(timeContainer).text(timer);
+    startButton2.hide();
     count();
     isBoardLocked = false;
   }
@@ -138,10 +136,10 @@ function unflipAllcards() {
   function stopGame() {
     if (timeout) {
       clearTimeout(timeout);
-      startButton2.show()
+      startButton2.show();
     }
     timer = 0; 
-    $(timeContainer).text(timer)
+    $(timeContainer).text(timer);
     isBoardLocked = true;
     unflipAllcards();
-  }
+}
