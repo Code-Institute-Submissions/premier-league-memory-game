@@ -4,7 +4,7 @@
 
 # ReadMe
 
-Link to view the website - https://cfaulkner985.github.io/premier-league-memory-game/index.html
+Link to view the website - https://cfaulkner985.github.io/premier-league-memory-game/
 
 I am creating a website on a Premier League memory card game. The page will have a grid with 20 playing cards displayed. There will be an image behind each box and the user will click on a card which will reveal a Premier League club logo. The aim of the game is to match the same logo in just 2 clicks and the images will be removed. The game will finish when all logos have been matched. The game will have a timer on it which will display how long it takes the user to complete it. There will also be 2 buttons; the first one will be a ‘Start Game’ button where the user will press to start the timer of the game. The second will be an ‘End Game’ button which will be used to stop the timer when the user is finished playing the game.
 
