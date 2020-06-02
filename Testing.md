@@ -62,18 +62,17 @@
 *	When I clicked on the ‘Start Game’ button the timer starts counting as expected.
 *	When I match all badges before the 60 seconds I get the message “"Congratulations you got all 8 matches" as this is what I expected to happen 
 *	If I match 1-7 pairs when the time runs out I get the message “"Time's up! You got (No. of matches 1-7) matches which is what expected.
-* The grid refreshes to its originasl state after completed game or timwer runs out.
+* The grid refreshes to its originasl state after completed game or timer runs out.
+* When the grid refreses the user can keep playing the game as many times as they like.
 
-
-## Pending Issues
-*	When finishing the game with all matches the last card does not turn over as expected and this would be something I would have to look at in the future.
-
+ ## Pending Issues
+* I was able to fix all of the pending issues that I had.
 
 ## Validation
 I have used the W3C validators to make sure my HTML and CSS codes have no errors. The links for these can be found below:
 - W3C CSS validation (https://jigsaw.w3.org/css-validator/) 
 - W3C Markup Validation (https://validator.w3.org/)
-- I also used (https://esprima.org/demo/validate.html) to validate there was no errors on the JavaScript file.
+- I also used JSHint (https://jshint.com/) to validate there was no errors on the JavaScript file.
 
 ## Further Testing
 *	I checked the website on different devices and from different locations and looks good.
